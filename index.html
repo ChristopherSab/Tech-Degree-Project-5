@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Interactive Photo Gallery</title>
+    
 </head>
 
 <body>
@@ -15,63 +19,37 @@
     <main>
 
         <div class="container">
-
-            <div class="gallery">
-                <img src="images/thumbnail/01.jpg" alt="Hay Bales">
+            
+            <div class="row-1">
+            <a href="images/main/01.jpg" data-lightbox="row-1"><img src="images/thumbnail/01.jpg" alt=""></a>
+            <a href="images/main/02.jpg" data-lightbox="row-1"><img src="images/thumbnail/02.jpg" alt=""></a>
+            <a href="images/main/03.jpg" data-lightbox="row-1"><img src="images/thumbnail/03.jpg" alt=""></a>
+            <a href="images/main/04.jpg" data-lightbox="row-1"><img src="images/thumbnail/04.jpg" alt=""></a>
+            </div>
+            
+            <div class="row-2">
+            <a href="images/main/05.jpg" data-lightbox="row-2"><img src="images/thumbnail/05.jpg" alt=""></a>
+            <a href="images/main/06.jpg" data-lightbox="row-2"><img src="images/thumbnail/06.jpg" alt=""></a>
+            <a href="images/main/07.jpg" data-lightbox="row-2"><img src="images/thumbnail/07.jpg" alt=""></a>
+            <a href="images/main/08.jpg" data-lightbox="row-2"><img src="images/thumbnail/08.jpg" alt=""></a>
             </div>
 
-            <div class="gallery">
-                <img src="images/thumbnail/02.jpg" alt="Lake">
+            <div class="row-3">
+            <a href="images/main/09.jpg" data-lightbox="row-3"><img src="images/thumbnail/09.jpg" alt=""></a>
+            <a href="images/main/10.jpg" data-lightbox="row-3"><img src="images/thumbnail/10.jpg" alt=""></a>
+            <a href="images/main/11.jpg" data-lightbox="row-3"><img src="images/thumbnail/11.jpg" alt=""></a>
+            <a href="images/main/12.jpg" data-lightbox="row-3"><img src="images/thumbnail/12.jpg" alt=""></a>
             </div>
-
-            <div class="gallery">
-                <img src="images/thumbnail/03.jpg" alt="Canyon">
-            </div>
-
-            <div class="gallery">
-                <img src="images/thumbnail/04.jpg" alt="Iceberg">
-            </div>
-
-            <div class="gallery">
-                <img src="images/thumbnail/05.jpg" alt="Desert">
-            </div>
-            <div class="gallery">
-                <img src="images/thumbnail/06.jpg" alt="Fall">
-            </div>
-            <div class="gallery">
-                <img src="images/thumbnail/07.jpg" alt="Plantation">
-            </div>
-            <div class="gallery">
-                <img src="images/thumbnail/08.jpg" alt="Dunes">
-            </div>
-            <div class="gallery">
-                <img src="images/thumbnail/09.jpg" alt="Countryside Lane">
-            </div>
-            <div class="gallery">
-                <img src="images/thumbnail/10.jpg" alt="Sunset">
-            </div>
-            <div class="gallery">
-                <img src="images/thumbnail/11.jpg" alt="Cave">
-            </div>
-            <div class="gallery">
-                <img src="images/thumbnail/12.jpg" alt="Bluebells">
-            </div>
-
-
-
-
-
-
 
         </div>
+        
 
     </main>
 
-
-
-
-
-
+    <script src="js/lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    
 
 </body>
 
