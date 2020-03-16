@@ -1,26 +1,28 @@
 
 
-$(document).ready(function(){
-  $("#search-input").keyup(function(){
+let search = document.getElementById('search-input');
+let a = document.getElementsByClassName('thumbnail');
 
-      // Retrieve the input field text 
-      var filter = $(this).val();
+search.addEventListener('keyup', () => {
+    const input = search.value.toLowerCase();
 
-      // Loop through the comment list
-      $("[data-alt]").each()(function(){
-
-          // If the list item does not contain the text phrase fade it out
-          if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-              $(this).fadeOut();
-
-          // Show the list item if the phrase matches and increase the count by 1
-          } else {
-              $(this).show();
-          }
-      });
-
-  });
+    for (let i = 0; i < a.length; i += 1) {
+        const attrData = a[i].getAttribute('data-alt');
+        if (attrData.toLowerCase().indexOf(input) > -1) {
+            a[i].style.display = "";
+            } else {
+            a[i].style.display = "none";
+            }
+    }
 });
+
+search.addEventListener('search-input', () => {
+    if (event.target.value === '') {
+      for (let i = 0; i < a.length; i += 1) {
+        a[i].style.display = "";
+      }
+    }
+  });
 
 
   lightbox.option({
