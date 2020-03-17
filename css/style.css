@@ -31,8 +31,19 @@ header {
     display: block;
 }
 
-.container img:hover {
-    transform: scale(1.1);
+.lightboxOverlay{
+
+    opacity: 0.9;
+}
+
+.lb-data .lb-number{
+    display: none;
+}
+
+.lb-data .lb-details{
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-left: 1rem;
 }
 
 /* Media-Queries*/
