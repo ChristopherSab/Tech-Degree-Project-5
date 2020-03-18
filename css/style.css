@@ -36,10 +36,6 @@ header {
     opacity: 0.9;
 }
 
-.lb-data .lb-number{
-    display: none;
-}
-
 .lb-data .lb-details{
     text-align: center;
     margin-top: 1.5rem;
