@@ -66,12 +66,13 @@ header {
 @media (min-width: 1024px){
 
     #search-input {
-        width: 45vw;
+        min-width: 450px;
     }
 
     .container {
         margin: 0 4rem;
         justify-content: space-between;
+        max-width: 1000px;
     }
 
     .container img {
